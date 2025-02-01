@@ -1,7 +1,20 @@
-Sobre o challenge:
+# 🎁 Amigo Secreto
 
-É uma aplicação que permita aos usuários inserir nomes de amigos em uma lista para, em seguida, realizar um sorteio aleatório e determinar quem é o "amigo secreto".
+Uma aplicação que permite aos usuários inserir nomes de amigos, em seguida, realiza um sorteio aleatório e determina quem é o "amigo secreto".
 
-O usuário deverá adicionar nomes por meio de um campo de texto e de um botão "Adicionar".
+### ✨ Funcionalidades
 
-Os nomes inseridos serão exibidos em uma lista visível na página, e ao finalizar, um botão "Sortear Amigo" selecionará um dos nomes de forma aleatória, exibindo o resultado na tela.
+- **Adicionar Amigos:** O usuário insere um nome no campo de texto e clica no botão "Adicionar".
+- **Lista de Participantes:** Os nomes adicionados são exibidos em uma lista na tela.
+- **Sorteio Aleatório:** Ao clicar no botão "Sortear Amigo", os pares de amigos secretos são formados de maneira aleatória.
+- **Exibição Gradual:** Cada clique no botão "Sortear Amigo" revela um novo amigo sorteado até que todos sejam exibidos.
+
+## 📷 Preview
+
+<img src="assets/preview.png" alt="Imagem da aplicação Amigo Secreto" width="600">
+
+## 🎮 Acesse o Jogo
+
+🔗 **[Clique aqui para jogar!]()**  
+
+*(O jogo pode passar por atualizações ao longo do tempo para melhorias.)*
