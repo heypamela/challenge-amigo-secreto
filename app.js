@@ -1,5 +1,5 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. 
-// Aqui você deverá desenvolver a lógica para resolver o problema.
+//O principal objetivo deste desafio é fortalecer as habilidades em lógica de programação. 
+// Aqui desenvolverá a lógica para resolver o problema.
 
 let amigos = [];
 let resultadoSorteio = [];
@@ -21,6 +21,11 @@ function adicionarAmigo() {
 function sortearAmigo() {
     const botaoSortear = document.querySelector(".button-draw");
     const resultadoLista = document.getElementById("resultado");
+
+    if (botaoSortear.dataset.state === "reiniciar") {
+        reiniciarJogo();
+        return;
+    }
 
     if (amigos.length < 2) {
         alert("Adicione pelo menos dois amigos antes de sortear.");
@@ -53,7 +58,9 @@ function sortearAmigo() {
         indiceAtual++;
     } else {
         resultadoLista.innerHTML = `Todos os amigos já foram sorteados!`;
-        botaoSortear.disabled = true; 
+        
+        botaoSortear.innerHTML = `<img src="assets/play_circle_outline.png" alt="Ícone de play"> Reiniciar Jogo`;
+        botaoSortear.dataset.state = "reiniciar"; 
     }
 }
 
@@ -73,4 +80,21 @@ function embaralharListaAmigos(array) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+}
+
+function reiniciarJogo() {
+    amigos = [];
+    resultadoSorteio = [];
+    indiceAtual = 0;
+
+    document.getElementById("resultado").textContent = "";
+    document.getElementById("listaAmigos").innerHTML = "";
+    document.getElementById("listaAmigos").style.display = "block";
+
+    document.getElementById("amigo").value = "";
+    
+    const botaoSortear = document.querySelector(".button-draw");
+    
+    botaoSortear.innerHTML = `<img src="assets/play_circle_outline.png" alt="Ícone de play"> Sortear amigo`;
+    botaoSortear.dataset.state = "sortear";
 }
