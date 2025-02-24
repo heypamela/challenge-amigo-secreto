@@ -15,6 +15,6 @@ Uma aplicação que permite aos usuários inserir nomes de amigos, em seguida, r
 
 ## 🎮 Acesse o Jogo
 
-🔗 **[Clique aqui para jogar!]()**  
+🔗 **[Clique aqui para jogar!](https://challenge-amigo-secreto-kzmycrl4q-pamelas-projects-0687e5eb.vercel.app/)**  
 
 *(O jogo pode passar por atualizações ao longo do tempo para melhorias.)*
